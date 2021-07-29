@@ -18,10 +18,11 @@
 
 so to do this I add the code below to **texttospeech.py page**
 
-with open('./testspeech.mp3', 'wb') as audio_file:
-res = tts.synthesize(text, accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()
-audio_file.write(res.content)
+`with open('./testspeech.mp3', 'wb') as audio_file:`
 
+`res = tts.synthesize(text, accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()`
+
+`audio_file.write(res.content)`
 
 
  
